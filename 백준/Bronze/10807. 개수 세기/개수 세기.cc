@@ -28,5 +28,6 @@ int main() {
 		}
 	}
 
+	//output
 	printf("%d", num);
 }
