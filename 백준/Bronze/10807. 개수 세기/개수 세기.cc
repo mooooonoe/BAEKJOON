@@ -3,6 +3,9 @@
 
 int main() {
 	int N, v, num = 0;
+
+	//out of bounds err
+	//int arr[50] = {0, };
 	int arr[101] = { 0, };
 
 	//input
