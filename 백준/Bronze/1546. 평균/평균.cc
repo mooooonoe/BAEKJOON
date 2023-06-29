@@ -21,7 +21,7 @@ int main(){
 	}
 
 	float sum = 0;
-	/*for (int i = 0; i < num; i++) {
+	/*for (int i = 0; i < num; i++) { 
 		//printf("%d %d %f", arr[i], arr[pos], (float)arr[i]/(float)arr[pos]);
 		if (i == pos) {
 			sum = sum + (float)arr[i];
@@ -34,7 +34,7 @@ int main(){
 		}
 
 		sum = sum + (float)arr[i];
-	}*/
+	}*/										// 이부분 !! 당연히 최고점은 최고점으로 안 나눌 줄 알았는데 .. 문제 를 꼼꼼히 읽자 !!
 
 	for (int i = 0; i < num; i++) {
 		sum += (float)arr[i] / max * 100;
