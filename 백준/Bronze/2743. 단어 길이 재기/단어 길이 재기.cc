@@ -10,3 +10,7 @@ int main() {
 
 	return 0;
 }
+
+
+//strlen 사용 시,
+//#include<cstring> //string.h 도 cstring.h 도 아님 조심 !!
