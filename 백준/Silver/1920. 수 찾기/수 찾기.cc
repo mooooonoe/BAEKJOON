@@ -49,6 +49,8 @@ int main() {
 		scanf(" %d", &list[i]);
 	}
 
+
+	//정렬할 배열, 요소 개수, 요소 크기, 비교함수 
 	qsort(list, n, sizeof(list[0]), compare);
 
 	scanf(" %d", &m);
