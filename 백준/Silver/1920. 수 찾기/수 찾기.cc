@@ -59,6 +59,7 @@ int main() {
 
 	scanf(" %d", &m);
 
+	//이진탐색
 	for (i = 0; i < m; i++) {
 		scanf(" %d", &data);
 		if (binary(list, n, data) == 0) {
