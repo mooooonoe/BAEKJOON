@@ -13,6 +13,10 @@ int compare(const void* first, const void* second) {
 		return 1;
 	}
 
+	//오름차순 정렬
+
+	//내림차순 정렬 -> a<b 일때 1반환
+
 	return 0;
 }
 
