@@ -66,3 +66,5 @@ int main() {
 	free(list);
 	return 0;
 }
+
+//이진트리 !
