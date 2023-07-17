@@ -73,7 +73,13 @@ int main() {
 	return 0;
 }
 
-//이진트리
+//이진탐색
+
+//중간 값과 찾고자 하는 값 비교
+//작으면 중간 값의 좌측과 비교, 크면 우측과 비교
+//반복
+
+
 //qsort 함수 //#include <stdlib.h> //qsort 함수 선언된 헤더파일 
 
 //void qsort (void *base, size_t nel, size_t width, int (*compare)(const void *, const void *);
