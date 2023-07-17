@@ -67,4 +67,14 @@ int main() {
 	return 0;
 }
 
-//이진트리 !
+//이진트리
+//qsort 함수
+
+//void qsort (void *base, size_t nel, size_t width, int (*compare)(const void *, const void *);
+
+//base : 정렬하고자 하는 배열의 포인터
+//nel : 배열의 각 원소들의 총 수
+//width : 배열에서 원소 하나의 크기 
+//(*compare) : 비교를 수행할 함수 포인터
+
+
