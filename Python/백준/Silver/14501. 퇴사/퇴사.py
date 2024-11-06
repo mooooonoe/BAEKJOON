@@ -1,23 +1,17 @@
-day = int(input())
-arrT = []
-arrP = []
+# 15486 퇴사 2
 
-for i in range(day):
-    T,P = map(int, input().split())
-    arrT.append(T)
-    arrP.append(P)
+n = int(input())
+data = [list(map(int, input().split())) for _ in range(n)]
+dp = [0]*(n+1)
 
-# print(arrT, arrP)
-# dp = [0 for i in range(day+1)]
+profit = 0
 
-dp = [0]*(day+1)
-max_value = 0
+for i in range(n):
+    profit = max(profit, dp[i])
+    
+    if i + data[i][0] >n:
+        continue
 
-for i in range(day-1, -1, -1):
-    if arrT[i]+i <= day:
-        dp[i] = max(arrP[i] + dp[i+arrT[i]], max_value)
-        max_value = dp[i]
-    else:
-        dp[i] = max_value
+    dp[i+data[i][0]] = max(profit + data[i][1], dp[i+data[i][0]])
 
-print(max_value)
+print(max(dp))
