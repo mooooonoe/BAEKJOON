@@ -3,16 +3,16 @@
 
 using namespace std;
 
+int cnt = 0;
 
-int cnt=0;
-
-void DFS(vector<int> &numbers, int target, int L,int sum){
+void DFS(vector<int> &numbers, int target, int L, int sum){
     
     if(L==numbers.size()){
-        if(sum==target) cnt++;
-    }else{
-        DFS(numbers,target,L+1,sum+numbers[L]);
-        DFS(numbers,target,L+1,sum-numbers[L]);
+        if(sum == target) cnt++;
+    }
+    else{
+        DFS(numbers, target, L+1, sum+numbers[L]);
+        DFS(numbers, target, L+1, sum-numbers[L]);
     }
     
 }
